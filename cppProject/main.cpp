@@ -1,30 +1,30 @@
 #define _CRT_SECURE_NO_WARNINGS
 
-//#include<iostream>
-//#include<string>
-//#include<cmath>
-//#include<climits>
-//#include<stdio.h>
-//using namespace std;
-//int max(int a, int b)
+// #include<iostream>
+// #include<string>
+// #include<cmath>
+// #include<climits>
+// #include<stdio.h>
+// using namespace std;
+// int max(int a, int b)
 //{
 //	return a > b ? a : b;
-//}
-//double max(double a, double b)
+// }
+// double max(double a, double b)
 //{
 //	return a > b ? a : b;
-//}
-//long long max(long long a, long long b)
+// }
+// long long max(long long a, long long b)
 //{
 //	return a > b ? a : b;
-//}
+// }
 //
-//struct Stu {
+// struct Stu {
 //	string name;
 //	int age;
-//};
+// };
 //
-//int main()
+// int main()
 //{
 //	cout.setf(ios_base::fixed, ios_base::floatfield);
 //	//const int Size = 20;
@@ -74,12 +74,12 @@
 //	return 0;
 //}
 
-//#include<iostream>
-//#include<vector>
-//#include<array>
-//using namespace std;
+// #include<iostream>
+// #include<vector>
+// #include<array>
+// using namespace std;
 //
-//int main()
+// int main()
 //{
 //	double a1[4] = { 1.2,2.4,3.6,4.8 };
 //	vector<double> a2(4);
@@ -94,181 +94,181 @@
 //	a4 = a3;
 //	cout << a4[2] << endl;
 //	return 0;
-//}
+// }
 
-//6.7---6.14 利用cin.clear()解决类型不匹配
+// 6.7---6.14 利用cin.clear()解决类型不匹配
 
-//#include<iostream>
-//const int Max = 5;
-//int main()
+// #include<iostream>
+// const int Max = 5;
+// int main()
 //{
 //	using namespace std;
 //	int golf[Max];
-//    cout << "Please enter your golf scores.\n";
-//    cout << "You must enter " << Max << " rounds.\n";
-//    int i;
-//    for (i = 0; i < Max; i++)
-//    {
-//        cout << "round #" << i + 1 << ": ";
-//        while (!(cin >> golf[i]))
-//        {
-//            cin.clear();
-//            while (cin.get() != '\n')
-//                continue;
-//            cout << "Please enter a number: ";
-//        }
-//    }
+//     cout << "Please enter your golf scores.\n";
+//     cout << "You must enter " << Max << " rounds.\n";
+//     int i;
+//     for (i = 0; i < Max; i++)
+//     {
+//         cout << "round #" << i + 1 << ": ";
+//         while (!(cin >> golf[i]))
+//         {
+//             cin.clear();
+//             while (cin.get() != '\n')
+//                 continue;
+//             cout << "Please enter a number: ";
+//         }
+//     }
 //
-//    double total = 0.0;
-//    // 累加每一轮的成绩
-//    for (i = 0; i < Max; i++)
-//        total += golf[i];
-//    
-//    cout << total / Max << " = average score " << Max << " rounds\n";// 计算并输出平均成绩
+//     double total = 0.0;
+//     // 累加每一轮的成绩
+//     for (i = 0; i < Max; i++)
+//         total += golf[i];
+//
+//     cout << total / Max << " = average score " << Max << " rounds\n";// 计算并输出平均成绩
 //
 //	return 0;
-//}
+// }
 
-//6.8---文本输入与输出
+// 6.8---文本输入与输出
 
-//#include<iostream>
-//#include<fstream>
-//int main()
+// #include<iostream>
+// #include<fstream>
+// int main()
 //{
 //	using namespace std;
-//    
-//    char automobile[50];
-//    int year;
-//    double a_price;
-//    double b_price;
 //
-//    ofstream outFile;
-//    outFile.open("score.txt");
-//    if (!outFile) {
-//        cout << "Failed to open file" << endl;
-//        return 1;
-//    }
+//     char automobile[50];
+//     int year;
+//     double a_price;
+//     double b_price;
 //
-//    cout << "Enter the make and model of automobile: ";
-//    cin.getline(automobile, 50);
-//    cout << "Enter the model year: ";
-//    cin >> year;
-//    cout << "Enter the original asking price: ";
-//    cin >> a_price;
-//    b_price = 0.913 * a_price;
+//     ofstream outFile;
+//     outFile.open("score.txt");
+//     if (!outFile) {
+//         cout << "Failed to open file" << endl;
+//         return 1;
+//     }
 //
-//    cout << fixed;
-//    cout.precision(2);
-//    cout.setf(ios_base::showpoint);
-//    cout << "Make and model: " << automobile << endl;
-//    cout << "Year: " << year << endl;
-//    cout << "Was asking $" << a_price << endl;
-//    cout << "Now asking $" << b_price << endl;
+//     cout << "Enter the make and model of automobile: ";
+//     cin.getline(automobile, 50);
+//     cout << "Enter the model year: ";
+//     cin >> year;
+//     cout << "Enter the original asking price: ";
+//     cin >> a_price;
+//     b_price = 0.913 * a_price;
 //
-//    outFile << fixed;
-//    outFile.precision(2);
-//    outFile.setf(ios_base::showpoint);
-//    outFile << "Make and model: " << automobile << endl;
-//    outFile << "Year: " << year << endl;
-//    outFile << "Was asking $" << a_price << endl;
-//    outFile << "Now asking $" << b_price << endl;
+//     cout << fixed;
+//     cout.precision(2);
+//     cout.setf(ios_base::showpoint);
+//     cout << "Make and model: " << automobile << endl;
+//     cout << "Year: " << year << endl;
+//     cout << "Was asking $" << a_price << endl;
+//     cout << "Now asking $" << b_price << endl;
 //
-//    outFile.close();
+//     outFile << fixed;
+//     outFile.precision(2);
+//     outFile.setf(ios_base::showpoint);
+//     outFile << "Make and model: " << automobile << endl;
+//     outFile << "Year: " << year << endl;
+//     outFile << "Was asking $" << a_price << endl;
+//     outFile << "Now asking $" << b_price << endl;
+//
+//     outFile.close();
 //	return 0;
-//}
+// }
 
-//#include<iostream>
-//#include<fstream>
-//#include<cstdlib>
-//const int SIZE = 60;
-//int main()
+// #include<iostream>
+// #include<fstream>
+// #include<cstdlib>
+// const int SIZE = 60;
+// int main()
 //{
-//    using namespace std;
-//    char filename[SIZE];
-//    ifstream inFile;
+//     using namespace std;
+//     char filename[SIZE];
+//     ifstream inFile;
 //
-//    cout << "Enter name of data file: ";
-//    cin.getline(filename, SIZE);
+//     cout << "Enter name of data file: ";
+//     cin.getline(filename, SIZE);
 //
-//    inFile.open(filename);
-//    if (!inFile.is_open()) {
-//        cout << "Could not open the file " << filename << endl;
-//        cout << "Program terminating.\n";
-//        exit(EXIT_FAILURE);
-//    }
+//     inFile.open(filename);
+//     if (!inFile.is_open()) {
+//         cout << "Could not open the file " << filename << endl;
+//         cout << "Program terminating.\n";
+//         exit(EXIT_FAILURE);
+//     }
 //
-//    double value;
-//    double sum = 0.0;
-//    double count = 0;
+//     double value;
+//     double sum = 0.0;
+//     double count = 0;
 //
-//    inFile >> value;
-//    while (inFile.good()) {
-//        ++count;
-//        sum += value;
-//        inFile >> value;
-//    }
+//     inFile >> value;
+//     while (inFile.good()) {
+//         ++count;
+//         sum += value;
+//         inFile >> value;
+//     }
 //
-//    if (inFile.eof()) {
-//        cout << "End of file reached.\n";
-//    }
-//    else if (inFile.fail()) {
-//        cout << "Input terminated by data mismatch.\n";
-//    }
-//    else {
-//        cout << "Input terminated for unknown reason.\n";
-//    }
+//     if (inFile.eof()) {
+//         cout << "End of file reached.\n";
+//     }
+//     else if (inFile.fail()) {
+//         cout << "Input terminated by data mismatch.\n";
+//     }
+//     else {
+//         cout << "Input terminated for unknown reason.\n";
+//     }
 //
-//    if (count == 0) {
-//        cout << "No data processed.\n";
-//    }
-//    else {
-//        cout << "Items read: " << count << endl;
-//        cout << "Sum: " << sum << endl;
-//        cout << "Average: " << sum / count << endl;
-//    }
+//     if (count == 0) {
+//         cout << "No data processed.\n";
+//     }
+//     else {
+//         cout << "Items read: " << count << endl;
+//         cout << "Sum: " << sum << endl;
+//         cout << "Average: " << sum / count << endl;
+//     }
 //
-//    inFile.close();
-//    return 0;
-//}
+//     inFile.close();
+//     return 0;
+// }
 
-//#include <iostream>
-//const int Len = 80;
-//void subdivide(char ar[], int low, int high, int level);
-//const int Divs = 8;
+// #include <iostream>
+// const int Len = 80;
+// void subdivide(char ar[], int low, int high, int level);
+// const int Divs = 8;
 //
-//int main() {
-//    char ruler[Len];
-//    int i;
-//    for (i = 1; i < Len - 2; i++)
-//        ruler[i] = ' ';
-//    ruler[Len - 1] = '\0';
-//    int max = Len - 2;
-//    int min = 0;
-//    ruler[min] = ruler[max] = '|';
-//    std::cout << ruler << std::endl;
-//    for (i = 1; i <= Divs; i++) {
-//        subdivide(ruler, min, max, i);
-//        std::cout << ruler << std::endl;
-//        for (int j = 1; j < Len - 2; j++)
-//            ruler[j] = ' ';
-//    }
-//    return 0;
-//}
+// int main() {
+//     char ruler[Len];
+//     int i;
+//     for (i = 1; i < Len - 2; i++)
+//         ruler[i] = ' ';
+//     ruler[Len - 1] = '\0';
+//     int max = Len - 2;
+//     int min = 0;
+//     ruler[min] = ruler[max] = '|';
+//     std::cout << ruler << std::endl;
+//     for (i = 1; i <= Divs; i++) {
+//         subdivide(ruler, min, max, i);
+//         std::cout << ruler << std::endl;
+//         for (int j = 1; j < Len - 2; j++)
+//             ruler[j] = ' ';
+//     }
+//     return 0;
+// }
 //
-//void subdivide(char ar[], int low, int high, int level) {
-//    if (level == 0)
-//        return;
-//    int mid = (high + low) / 2;
-//    ar[mid] = '|';
-//    subdivide(ar, low, mid, level - 1);
-//    subdivide(ar, mid, high, level - 1);
-//}
+// void subdivide(char ar[], int low, int high, int level) {
+//     if (level == 0)
+//         return;
+//     int mid = (high + low) / 2;
+//     ar[mid] = '|';
+//     subdivide(ar, low, mid, level - 1);
+//     subdivide(ar, mid, high, level - 1);
+// }
 
-//#include<iostream>
-//#include<fstream>
-//using namespace std;
-//void file_it(ostream& os, const char*, int year, double a_price, double b_price);
-//int main()
+// #include<iostream>
+// #include<fstream>
+// using namespace std;
+// void file_it(ostream& os, const char*, int year, double a_price, double b_price);
+// int main()
 //{
 //
 //	char automobile[50];
@@ -297,8 +297,8 @@
 //	cout << 12.5 << endl;
 //	outFile.close();
 //	return 0;
-//}
-//void file_it(ostream& os, const char* automobile, int year, double a_price, double b_price)
+// }
+// void file_it(ostream& os, const char* automobile, int year, double a_price, double b_price)
 //{
 //	ios_base::fmtflags initial;
 //	initial = os.setf(ios_base::fixed);
@@ -309,38 +309,38 @@
 //	os << "Was asking $" << a_price << endl;
 //	os << "Now asking $" << b_price << endl;
 //	os.setf(initial);
-//}
+// }
 
-//test
+// test
 
 //// 场景一测试
-//#include <iostream>
-//void f(const char* str, unsigned n = 1) { std::cout << "Version 1\n"; }
-//void f(const char* str) { std::cout << "Version 2\n"; }
+// #include <iostream>
+// void f(const char* str, unsigned n = 1) { std::cout << "Version 1\n"; }
+// void f(const char* str) { std::cout << "Version 2\n"; }
 //// 初始版本
-//void send(const std::string& data) { std::cout << 1 << std::endl; }
+// void send(const std::string& data) { std::cout << 1 << std::endl; }
 //
 //// 扩展版本（添加可选参数）
-//void send(const std::string& data, bool compress) { std::cout << 2 << std::endl; }
-//int main()
+// void send(const std::string& data, bool compress) { std::cout << 2 << std::endl; }
+// int main()
 //{
 //	const char* p = "hello";
 //	send(p);
-//}
+// }
 //
-// 场景二
-//#include <iostream>
-//void f(int x) { std::cout << "Version A\n"; }
-//void f(int x, int y = 0) { std::cout << "Version B\n"; }
-//int main() { f(10); } // 应报歧义
+//  场景二
+// #include <iostream>
+// void f(int x) { std::cout << "Version A\n"; }
+// void f(int x, int y = 0) { std::cout << "Version B\n"; }
+// int main() { f(10); } // 应报歧义
 
-//#include<iostream>
-//void f();
-//namespace b
+// #include<iostream>
+// void f();
+// namespace b
 //{
 //	int y = 20;
-//}
-//namespace myth
+// }
+// namespace myth
 //{
 //
 //	namespace a
@@ -355,18 +355,18 @@
 //	using namespace a;
 //	using std::cout;
 //	using std::cin;
-//}
-//namespace MEF = myth::a::c;
-//namespace
+// }
+// namespace MEF = myth::a::c;
+// namespace
 //{
 //	int counts = 50;
-//}
-//namespace e { int x = 2; }
-//namespace d { int x = 1; using namespace e; void f() { x = 10; } }
+// }
+// namespace e { int x = 2; }
+// namespace d { int x = 1; using namespace e; void f() { x = 10; } }
 //
-//int main()
+// int main()
 //{
-//	
+//
 //	d::f();
 //	std::cout << d::x << std::endl;
 //	myth::cout << myth::c::z << std::endl;
@@ -378,15 +378,15 @@
 //	cout << counts;
 //	f();
 //	return 0;
-//}
+// }
 
 // 类(OOP)
 
-//1.Stock类
+// 1.Stock类
 
-//#include<iostream>
-//#include"head.h"
-//int main()
+// #include<iostream>
+// #include"head.h"
+// int main()
 //{
 //	using std::cout;
 //	using std::endl;
@@ -436,14 +436,14 @@
 //	};
 //	cout << int(b::a) << "," << int(c::a) << endl;
 //	return 0;
-//}
+// }
 
-//2.Stack类
+// 2.Stack类
 
-//#include<iostream>
-//#include<cctype>
-//#include"head.h"
-//int main()
+// #include<iostream>
+// #include<cctype>
+// #include"head.h"
+// int main()
 //{
 //	using namespace std;
 //	Stack st;
@@ -489,14 +489,14 @@
 //	}
 //	cout << "Bye\n";
 //	return 0;
-//}
+// }
 
-//3.Time类——使用运算符重载
+// 3.Time类——使用运算符重载
 
-//#include<iostream>
-//#include"head.h"
+// #include<iostream>
+// #include"head.h"
 //
-//int main()
+// int main()
 //{
 //	using std::cout;
 //	using std::endl;
@@ -549,15 +549,15 @@
 //	cout << "10.0*tosca: " << 10.0 * tosca << endl;
 //
 //	return 0;
-//}
+// }
 
-//4.矢量类——重载与友元
+// 4.矢量类——重载与友元
 
-//#include<iostream>
-//#include<cstdlib>
-//#include<ctime>
-//#include"head.h"
-//int main()
+// #include<iostream>
+// #include<cstdlib>
+// #include<ctime>
+// #include"head.h"
+// int main()
 //{
 //	using namespace std;
 //	using VECTOR::Vector;
@@ -598,22 +598,22 @@
 //		continue;
 //	}
 //	return 0;
-//}
+// }
 
-//5.类的自动转换和强制类型转换
+// 5.类的自动转换和强制类型转换
 
-//#include<iostream>
-//#include"head.h"
-//void display(const Stonewt& st, int n)
+// #include<iostream>
+// #include"head.h"
+// void display(const Stonewt& st, int n)
 //{
 //	for (int i = 0; i < n; i++)
 //	{
 //		std::cout << "Wow! ";
 //		st.show_stn();
 //	}
-//}
+// }
 //
-//int main()
+// int main()
 //{
 //	using std::cout;
 //	Stonewt a = Stonewt(275, 12);
@@ -626,25 +626,25 @@
 //	display(275.8, 2);
 //
 //	return 0;
-//}
+// }
 
-//6.类和动态内存分配——String类
+// 6.类和动态内存分配——String类
 
-#include<iostream>
-#include"head.h"
+#include <iostream>
+#include "head.h"
 const int ArSize = 10;
 const int MaxLen = 81;
 
 int main()
 {
-	using std::cout;
 	using std::cin;
+	using std::cout;
 	using std::endl;
 	String name;
 	cout << "Hi, what's your name?\n";
 	cin >> name;
 	cout << name << ", please enter up to " << ArSize
-		<< " short sayings <empty line to quit>:\n";
+		 << " short sayings <empty line to quit>:\n";
 	String sayings[ArSize];
 	char temp[MaxLen];
 	int i;
@@ -675,12 +675,15 @@ int main()
 			if (sayings[i] < sayings[first])
 				first = i;
 		}
-		cout << "Shortest saying:\n" << sayings[shortest] << endl;
-		cout << "First alphabetically:\n" << sayings[first] << endl;
+		cout << "Shortest saying:\n"
+			 << sayings[shortest] << endl;
+		cout << "First alphabetically:\n"
+			 << sayings[first] << endl;
 		cout << "This program used " << String::HowMany() << " String objects. Bye.\n";
 	}
 	else
 		cout << "No input! Bye.\n";
 	cout << "test1" << endl;
+	cout << "test3" << endl;
 	return 0;
 }
