@@ -684,6 +684,7 @@ int main()
 	else
 		cout << "No input! Bye.\n";
 	cout << "test1" << endl;
+	cout << "test2" << endl;
 	cout << "test3" << endl;
 	return 0;
 }
